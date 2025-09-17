@@ -1,0 +1,27 @@
+
+
+.firsttextsgrpcover{
+background: linear-gradient(
+  135deg,
+  #4c37c2 0%,
+  #c292d8 100%
+);
+height: 23vh;
+}
+
+.firsttextsgrp{
+    display: flex;
+    justify-content: space-between;
+font-size: 20px;
+color: #fefefe;
+
+}
+
+.left3{
+
+}
+
+.atm{
+    width: 200px;
+    height: 200px;
+}
