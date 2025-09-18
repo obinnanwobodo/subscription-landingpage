@@ -1,0 +1,226 @@
+/* Container for the entire section, now centered with a max-width */
+.upgradeSectionContainer {
+  font-family: system-ui;
+  padding: 30px 20px;
+  max-width: 700px; /* Set max-width to 700px to match the other card */
+  box-sizing: border-box;
+  margin-left: 110px;
+  border: 1px solid #f0f0f0;
+border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+
+.sectionTitle {
+  font-size: 1.8rem; /* Reduced font size */
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+  
+}
+
+.sectionDescription {
+  font-size: 0.9rem; /* Reduced font size */
+  color: #6b7280;
+  margin-bottom: 30px;
+  
+}
+
+/* Monthly/Yearly Toggle */
+.periodToggle {
+  display: flex;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 0 auto 30px auto; /* Centered */
+  width: fit-content;
+}
+
+.toggleButton {
+  background-color: transparent;
+  color: #6b7280;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Reduced font size */
+  font-weight: 500;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.toggleButton:hover {
+  color: #1a202c;
+}
+
+.toggleButton.activePeriod {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #1a202c;
+  font-weight: 600;
+}
+
+/* Plan Cards Grid */
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller cards */
+  gap: 24px;
+  justify-content: center;
+}
+
+.planCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+/* Most Popular Plan Specific Styling */
+.mostPopular {
+  border-color: #6a66ff;
+  box-shadow: 0 4px 15px rgba(106, 102, 255, 0.2);
+}
+
+.mostPopularBadge {
+  position: absolute;
+  top: -15px;
+  background-color: #6a66ff;
+  color: #ffffff;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.7rem; /* Reduced font size */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.planHeader {
+  margin-bottom: 20px;
+}
+
+.planIconWrapper {
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  width: 50px; /* Reduced icon wrapper size */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;
+}
+
+.mostPopular .planIconWrapper {
+  background-color: #6a66ff;
+}
+
+.planIcon {
+  font-size: 1.5rem; /* Reduced icon font size */
+  color: #4a5568;
+}
+
+.mostPopular .planIcon {
+  color: #ffffff;
+}
+
+.planName {
+  font-size: 1.4rem; /* Reduced font size */
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 5px;
+}
+
+.planTagline {
+  font-size: 0.8rem; /* Reduced font size */
+  color: #718096;
+}
+
+.planPrice {
+  font-size: 1.6rem; /* Reduced font size */
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 25px;
+}
+
+.priceAmount {
+  font-size: 2.2rem; /* Reduced font size */
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.planFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.planFeatures li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem; /* Reduced font size */
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.checkIcon {
+  color: #4CAF50;
+  font-size: 0.8rem; /* Reduced icon font size */
+  margin-right: 8px;
+  min-width: 0.8rem;
+}
+
+.upgradeButton {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 10px 20px; /* Reduced padding */
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem; /* Reduced font size */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.upgradeButton:hover {
+  background-color: #2563eb;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+.currentPlanButton {
+  background-color: #f0f4f8;
+  color: #4a5568;
+  border: 1px solid #d1d5db;
+  cursor: default;
+}
+
+.currentPlanButton:hover {
+  background-color: #f0f4f8;
+  box-shadow: none;
+  border-color: #d1d5db;
+}
+
+/* Responsive adjustments */
+@media (min-width: 601px) {
+  .plansGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .plansGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

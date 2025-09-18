@@ -1,12 +1,20 @@
 
 
+.genbill{
+ 
+  
+}
+
+/* NAVDESIGNS WITH ATM */
+
+
 .firsttextsgrpcover{
 background: linear-gradient(
   135deg,
   #4c37c2 0%,
   #c292d8 100%
 );
-height: 23vh;
+height: 28vh;
 }
 
 .firsttextsgrp{
@@ -14,14 +22,354 @@ height: 23vh;
     justify-content: space-between;
 font-size: 20px;
 color: #fefefe;
+padding: 20px;
+}
+
+.mys{
+  font-size: 40px;
+  font-family: system-ui;
+  font-weight: 700;
+ 
+  
+}
+
+.sbac{
+  font-size: 1.3rem;
+  color: #E5E7EB;
+  font-family: system-ui;
+  font-weight: 500;
+position: relative;
+bottom: 9px;
+}
+
+.back{
+    color: #212;
+    font-size: 16px;
+  font-family: system-ui;
+  font-weight: 500;
 
 }
 
-.left3{
+.icnndbk{
+  display: flex;
+  align-items: center;
+    Background-color: #E5E7EB; 
+  width:80px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 8px;
+justify-content: center;
+}
 
+.icnndbk svg{
+     color: #212;
+
+}
+
+.myp{
+  font-size: 16px;
+  color: #fefefe;
+  font-family: system-ui;
+  font-weight: 500;
+  background-color: #1275d2;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  position: relative;
+  top: 110px;
+
+}
+
+
+.left3{
+display: flex;
+flex-direction: column;
+position: relative;
+left: 60px;
+gap: 10px;
 }
 
 .atm{
-    width: 200px;
-    height: 200px;
+  position: relative;
+  bottom: 45px;
+   width: 280px;      
+  height: 280px;  
+  left: 100px;
+}
+
+.account{
+
+    color: #212;
+    font-size: 16px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+.icnndacc{
+  display: flex;
+  Background-color: #E5E7EB; 
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+}
+
+.icnndacc svg{
+    color: #212;
+
+}
+
+
+/*END OF NAVDESIGNS WITH ATM */
+
+
+
+
+
+/* The main card container */
+.currentPlanCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  width: 100%; /* Keeps 100% width */
+  max-width: 700px; /* Re-added max-width for better balance on large screens */
+  box-sizing: border-box;
+  font-family: system-ui;
+  border: 1px solid #f0f0f0;
+  margin-top: 30px;
+  margin-left: 110px;
+ 
+}
+
+/* Also update the bamy class to center its content */
+.bamy {
+  margin-top: 40px;
+  margin-left: 110px;
+  
+}
+
+/* --- Rest of the code remains the same --- */
+
+.bas {
+  font-size: 30px;
+  color: #1c1f26; /* Corrected 'columns' to 'color' */
+  font-weight: 700;
+  font-family: system-ui;
+}
+
+.mysabi {
+  font-size: 16px;
+  font-family: system-ui;
+  color: #818fa2;
+}
+
+/* Card Header */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.planTitleSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.crowndiv {
+  background-color: #dde2e9;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.crownIcon {
+  color: #3c83f6;
+  font-size: 1.2rem;
+}
+
+.planTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  font-family: system-ui;
+}
+
+.statusActive {
+  background-color: #e6f7ed;
+  color: #28a745;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* "Your active subscription" text */
+.activeSubscriptionText {
+  font-size: 14px;
+  font-family: system-ui;
+  color: #818fa2;
+  margin-bottom: 8px;
+}
+
+/* Plan Name */
+.planName {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1c1f26;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.planPrice {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3c83f6;
+  margin-left: 8px;
+}
+
+.permonth {
+  font-size: 16px;
+  color: #818fa2;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+/* Renewal Date */
+.renewalDate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #818fa2;
+  margin-bottom: 20px;
+  font-family: system-ui;
+}
+
+.calendarIcon {
+  color: #818fa2;
+  width: 16px;
+  height: 16px;
+}
+
+/* Plan Features List */
+.planFeatures h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1f26;
+  margin-bottom: 10px;
+  font-family: system-ui;
+}
+
+.planFeatures ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.planFeatures li {
+  font-size: 14px;
+  color: #818fa2;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  font-family: system-ui;
+}
+
+.planFeatures li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+/* Action Buttons Container */
+.cardActions {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.btnChangePlan,
+.btnCancelSubscription {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Change Plan Button */
+.btnChangePlan {
+  font-size: 14px;
+  background-color: #f0f4f8;
+  color: #4a5568;
+  border: 1px solid #d1d5db;
+  font-family: system-ui;
+}
+
+.btnChangePlan:hover {
+  background-color: #e2e8f0;
+  border-color: #bfdaeb;
+}
+
+/* Cancel Subscription Button */
+.btnCancelSubscription {
+  font-size: 14px;
+  background-color: #f0f4f8;
+  color: #e53e3e;
+  border: 1px solid #d1d5db;
+  font-family: system-ui;
+}
+
+.btnCancelSubscription:hover {
+  background-color: #e2e8f0;
+  border-color: #f56565;
+}
+
+
+
+.billndpay{
+  display: flex;
+  gap: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .cardActions {
+    flex-direction: column;
+  }
+  .planName {
+    font-size: 1.8rem;
+  }
+  .planPrice {
+    font-size: 1.4rem;
+  }
 }

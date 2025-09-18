@@ -1,0 +1,137 @@
+.paymentCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  font-family: system-ui;
+  max-width: 350px;
+  position: relative;
+  bottom: 1255px;
+
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1c1f26;
+  margin-bottom: 20px;
+}
+
+.cardDetails {
+  border: 1px solid #d1d5db;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cardIconWrapper {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.cardIcon {
+  color: #3b82f6;
+  font-size: 1.5rem;
+}
+
+.cardNumber {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.cardType {
+  font-weight: 700;
+}
+
+.cardExpiry, .cardholderName {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0 0 4px 44px; /* Align with card number */
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.updateCardBtn,
+.addPaymentBtn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #f0f4f8;
+  color: #4a5568;
+}
+
+.updateCardBtn:hover {
+  background-color: #e2e8f0;
+}
+
+.addPaymentBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+}
+
+.addPaymentBtn:hover {
+  background-color: #e2e8f0;
+}
+
+.plusIcon {
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+.securityInfo {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+.securityTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.securityList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.securityList li {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.securityCheckIcon {
+  color: #28a745;
+  margin-right: 8px;
+}
