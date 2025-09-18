@@ -47,7 +47,7 @@ bottom: 9px;
     font-size: 16px;
   font-family: system-ui;
   font-weight: 500;
-
+cursor: pointer;
 }
 
 .icnndbk{
@@ -80,6 +80,7 @@ justify-content: center;
   border-radius: 8px;
   position: relative;
   top: 110px;
+cursor: pointer;
 
 }
 
@@ -106,6 +107,8 @@ gap: 10px;
     font-size: 16px;
   font-family: system-ui;
   font-weight: 500;
+cursor: pointer;
+
 }
 
 .icnndacc{
@@ -144,6 +147,8 @@ gap: 10px;
   border: 1px solid #f0f0f0;
   margin-top: 30px;
   margin-left: 110px;
+  padding-bottom: 25px;
+  min-height: 457px;
  
 }
 
@@ -267,6 +272,8 @@ gap: 10px;
   color: #1c1f26;
   margin-bottom: 10px;
   font-family: system-ui;
+  border-top: 1px solid #e2e8f0;
+padding-top: 15px;
 }
 
 .planFeatures ul {
@@ -349,7 +356,7 @@ gap: 10px;
 
 .billndpay{
   display: flex;
-  gap: 220px;
+gap: 134px;
 }
 
 
@@ -361,7 +368,7 @@ gap: 10px;
 
 
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
   .cardActions {
     flex-direction: column;
@@ -373,3 +380,415 @@ gap: 10px;
     font-size: 1.4rem;
   }
 }
+
+@media (min-width: 0px)  and (max-width: 380px) {
+.atm{
+  margin-right: 40px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  bottom: 20px;
+
+}
+
+.myp{
+  margin-right: 30px;
+}
+
+.firsttextsgrpcover{
+} 
+
+.firsttextsgrp{
+padding: 10px;
+}
+}
+
+
+
+/* Start of mobile-first responsive design for the header */
+
+@media (max-width: 1024px) {
+    .firsttextsgrpcover {
+        height: 370px;
+        padding: 20px 10px;
+    }
+
+    .firsttextsgrp {
+        /* This will be our main column container */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .left3 {
+        /* Top section with the main titles */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        position: static;
+        left: 0;
+    }
+
+    .mys {
+        font-size: 26px;
+        line-height: 1.2;
+        padding-top: 120px;
+    }
+
+    .sbac {
+        font-size: 0.8rem;
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .icnndbk {
+        /* Back button positioning */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: auto;
+        height: 30px;
+        padding: 5px 10px;
+        z-index: 10;
+    }
+
+    .icnndbk svg {
+        font-size: 1.2em;
+    }
+
+    .back {
+        font-size: 14px;
+    }
+
+    .myp {
+        /* Manage your plan button */
+        position: static;
+        top: 0;
+        width: auto;
+        height: 40px;
+        padding-top: 5px;
+        margin-top: 49px; /* Adjust spacing */
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 4px;
+        padding-right: 3px;
+        background-color: #fefefe;
+        color: #2c71e0;
+        font-weight: 700;
+    }
+
+    .atm {
+        /* ATM image */
+        display: flex ; /* Hide the image to achieve the mock-up's layout */
+        width: 150px;
+        height: 150px;
+        position: relative;
+        bottom: 100px;
+        margin-left: 40px;
+    }
+
+    .icnndacc {
+        /* Account button positioning */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: auto;
+        height: 30px;
+        padding: 5px 10px;
+        z-index: 10;
+    }
+
+    .account {
+        font-size: 14px;
+        font-family: system-ui;
+    }
+
+    .icnndacc{
+      gap: 7px;
+    }
+  }
+
+
+
+    @media (max-width: 1024px) {
+      
+    
+
+/* BILLING AND SUBSCRIPTION */
+
+    .bamy {
+        margin-top: 25px;
+        margin-left: 0;
+        padding: 0 15px; /* Add padding to prevent text from touching edges */
+    }
+
+    .bas {
+        font-size: 24px;
+        text-align: center;
+        
+    }
+
+    .mysabi {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .currentPlanCard {
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 95%; /* Adjust to fit within the viewport with a small margin */
+        padding: 15px;
+    }
+
+    /* Card content layout */
+    .cardHeader {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .planTitleSection {
+        gap: 6px;
+    }
+
+    .planName {
+        font-size: 22px;
+        flex-direction: column; /* Stack the plan name and price */
+        align-items: center;
+        text-align: center;
+    }
+
+    .planPrice {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .permonth {
+        font-size: 14px;
+    }
+
+    .activeSubscriptionText, .renewalDate {
+        text-align: center;
+    }
+    
+    /* Buttons */
+    .cardActions {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 10px;
+    }
+
+    .btnChangePlan,
+    .btnCancelSubscription {
+        width: 100%; /* Make buttons full-width */
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    /* Billing sections */
+    .billndpay {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Tablet and Small Desktop Responsive Design (769px to 1199px) */
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+
+    /* General header container adjustments */
+    .firsttextsgrpcover {
+        height: 26vh; /* Slightly smaller height than desktop */
+    }
+
+    .firsttextsgrp {
+        /* Maintain flex row layout from desktop, but with reduced padding */
+        padding: 15px;
+        gap: 20px; /* Reduced gap between the main sections */
+    }
+
+    /* Left text section */
+    .left3 {
+        left: 20px; /* Reduced left offset */
+        gap: 5px; /* Reduced gap between text elements */
+    }
+
+    .mys {
+        font-size: 32px; /* Smaller font size for the main heading */
+    }
+
+    .sbac {
+        font-size: 1.1rem; /* Smaller sub-heading font size */
+        bottom: 5px; /* Adjust vertical position */
+    }
+
+    /* Back button container */
+    .icnndbk {
+        width: 70px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .back {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* "Manage Your Plan" button */
+    .myp {
+        top: 80px; /* Adjust vertical position to fit the smaller layout */
+        height: 30px;
+        font-size: 14px; /* Smaller font size */
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    
+    /* ATM image */
+    .atm {
+        width: 200px; /* Significantly reduced size from desktop */
+        height: 200px;
+        bottom: 30px; /* Adjusted vertical position */
+        left: 50px; /* Adjusted horizontal position */
+    }
+
+    /* Account button container */
+    .icnndacc {
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .account {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Main content cards */
+    .currentPlanCard {
+        margin-left: 50px; /* Reduced left margin */
+        padding: 20px;
+        max-width: 650px; /* Adjusted max width */
+    }
+
+    .bamy {
+        margin-left: 50px; /* Reduced left margin */
+    }
+
+    /* You can also add adjustments for other elements as needed, for example: */
+    .billndpay {
+        gap: 60px; /* Reduced gap between the two main content sections */
+    }
+
+
+
+
+
+
+    /* Main card and title section responsiveness */
+    .bamy {
+        margin-top: 30px;
+        margin-left: 50px; /* Reduced left margin from desktop */
+    }
+
+    .bas {
+        font-size: 28px;
+    }
+
+    .mysabi {
+        font-size: 15px;
+    }
+
+    .currentPlanCard {
+        margin-top: 25px;
+        margin-left: 50px; /* Reduced left margin */
+        max-width: 600px; /* A slightly smaller max-width */
+        padding: 20px;
+    }
+
+    /* Card content layout */
+    .cardHeader {
+        justify-content: space-between; /* Keep horizontal layout */
+    }
+
+    .planTitleSection {
+        gap: 6px;
+    }
+
+    .planTitle {
+        font-size: 18px;
+    }
+
+    .statusActive {
+        padding: 3px 8px;
+        font-size: 0.7rem;
+    }
+
+    .planName {
+        font-size: 26px; /* Reduced font size */
+    }
+
+    .planPrice {
+        font-size: 18px;
+        margin-left: 6px;
+    }
+
+    .permonth {
+        font-size: 15px;
+    }
+
+    .renewalDate {
+        font-size: 13px;
+    }
+
+    .planFeatures h3 {
+        font-size: 15px;
+        padding-top: 12px;
+    }
+
+    .planFeatures li {
+        font-size: 13px;
+        padding-left: 18px;
+    }
+    
+    /* Buttons */
+    .cardActions {
+        gap: 10px; /* Reduced gap between buttons */
+    }
+
+    .btnChangePlan,
+    .btnCancelSubscription {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+  }
+
+
+
+  @media (min-width: 0px) and (max-width: 1024px) {
+
+.billndpay{
+  display: flex;
+  flex-direction: column;
+
+}
+
+}
+
+
+
+
+
+
+

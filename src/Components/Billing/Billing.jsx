@@ -9,7 +9,7 @@ import { LuCrown } from "react-icons/lu";
 import Upgrade from '../Upgrade/Upgrade';
 import PaymentMethod from '../PaymentMethod/PaymentMethod';
 import BillingHistory from '../BillingHistory/BillingHistory';
-
+import Footer from '../Footer/Footer';
 
 const Billing = () => {
     return (
@@ -111,35 +111,37 @@ const Billing = () => {
 
 
 
-{/* UPGRADEN YOUR PLAN  */}
+            {/* UPGRADEN YOUR PLAN  */}
 
 
-<div>
-    <Upgrade/>
-</div>
-
-
-
-
-<div className={styles.billndpay}>
+            <div>
+                <Upgrade />
+            </div>
 
 
 
-<div>
-    <BillingHistory/>
-</div>
 
-
-<div>
-    <PaymentMethod/>
-</div>
+            <div className={styles.billndpay}>
 
 
 
-</div>
+                <div>
+                    <BillingHistory />
+                </div>
+
+
+                <div>
+                    <PaymentMethod />
+                </div>
 
 
 
+            </div>
+
+
+            <div>
+                <Footer />
+            </div>
 
 
         </div>

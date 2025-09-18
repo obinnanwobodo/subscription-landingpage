@@ -7,7 +7,7 @@
   margin-left: 110px;
   border: 1px solid #f0f0f0;
 border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 34px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
 }
@@ -69,6 +69,7 @@ border-radius: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller cards */
   gap: 24px;
   justify-content: center;
+  
 }
 
 .planCard {
@@ -82,7 +83,16 @@ border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
   position: relative;
+  max-height: 540px;
 }
+
+.planCard:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1); /* zooms out to 90% of original size */
+  transition: transform 0.7s ease; 
+
+}
+
 
 /* Most Popular Plan Specific Styling */
 .mostPopular {
@@ -205,6 +215,7 @@ border-radius: 10px;
   color: #4a5568;
   border: 1px solid #d1d5db;
   cursor: default;
+  padding-bottom: 10px;
 }
 
 .currentPlanButton:hover {
@@ -223,4 +234,161 @@ border-radius: 10px;
   .plansGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+
+
+@media (max-width: 1024px) {
+    /* Main container and section titles */
+    .upgradeSectionContainer {
+        padding: 20px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 95%; /* Keep a small margin from the screen edges */
+        text-align: center;
+    }
+    
+    .sectionTitle {
+        font-size: 1.5rem;
+    }
+
+    .sectionDescription {
+        font-size: 0.8rem;
+    }
+
+    /* Toggle buttons */
+    .periodToggle {
+        width: 100%; /* Make the toggle full-width */
+        padding: 5px;
+        justify-content: space-around;
+    }
+
+    .toggleButton {
+        flex: 1; /* Make buttons take up equal space */
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+    
+    /* Plans grid */
+    .plansGrid {
+        /* Stack cards vertically */
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+    
+    /* Individual plan cards */
+    .planCard {
+        padding: 20px;
+        max-height: none; /* Remove max height constraint */
+        margin-top: 35px;
+    }
+
+    .planCard:hover {
+        transform: none; /* Remove hover effect for better mobile UX */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); /* Keep consistent shadow */
+    }
+
+    /* Plan details */
+    .planIconWrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .planIcon {
+        font-size: 1.2rem;
+    }
+
+    .planName {
+        font-size: 1.2rem;
+    }
+    
+    .planTagline {
+        font-size: 0.75rem;
+    }
+
+    .planPrice {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .priceAmount {
+        font-size: 1.8rem;
+    }
+
+    .planFeatures {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    .checkIcon {
+        font-size: 0.7rem;
+    }
+
+    /* Buttons */
+    .upgradeButton {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    /* Main container and section titles */
+    .upgradeSectionContainer {
+        padding: 30px 15px;
+        margin-left: 50px; /* Adjust margin to align with other content */
+        max-width: 600px;
+    }
+    
+    .sectionTitle {
+        font-size: 1.6rem;
+    }
+    
+    /* Plans grid */
+    .plansGrid {
+        /* Use a 2-column or 3-column layout depending on preference */
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    /* Individual plan cards */
+    .planCard {
+        padding: 25px;
+    }
+
+    /* Plan details */
+    .planIconWrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .planIcon {
+        font-size: 1.4rem;
+    }
+
+    .planName {
+        font-size: 1.3rem;
+    }
+    
+    .planTagline {
+        font-size: 0.8rem;
+    }
+
+    .planPrice {
+        font-size: 1.5rem;
+    }
+
+    .priceAmount {
+        font-size: 2.0rem;
+    }
+
+    .planFeatures {
+        font-size: 0.85rem;
+    }
+    
+    /* Buttons */
+    .upgradeButton {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
 }

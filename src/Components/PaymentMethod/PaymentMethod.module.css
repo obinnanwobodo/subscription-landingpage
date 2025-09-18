@@ -5,10 +5,11 @@
   padding: 24px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
   font-family: system-ui;
-  max-width: 350px;
+  min-width: 370px;
   position: relative;
-  bottom: 1255px;
-
+  bottom: 1270px;
+  width: 100%;
+  max-height: 457px;
 }
 
 .cardTitle {
@@ -74,7 +75,7 @@
 .updateCardBtn,
 .addPaymentBtn {
   width: 100%;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -108,30 +109,157 @@
 .securityInfo {
   border-top: 1px solid #e2e8f0;
   padding-top: 20px;
+  margin-bottom: 25px;
 }
 
 .securityTitle {
   font-size: 0.9rem;
   font-weight: 600;
   color: #4a5568;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  position: relative;
+bottom: 8px;
 }
 
 .securityList {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .securityList li {
   font-size: 0.85rem;
   color: #6b7280;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
+  position: relative;
+  bottom: 8px;
 }
 
 .securityCheckIcon {
   color: #28a745;
   margin-right: 8px;
+}
+
+
+
+
+
+/* RESPONSIVNESS */
+
+
+
+@media (max-width: 1024px) {
+    .paymentCard {
+        min-width: unset; /* Remove min-width to allow fluid scaling */
+        padding: 15px; /* Reduced padding */
+        bottom: 0; /* Reset bottom position */
+        max-height: unset; /* Remove max height constraint */
+        width: 95%;
+        margin: 20px auto; /* Center the card */
+    }
+
+    .cardTitle {
+        font-size: 1rem; /* Smaller font size */
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .cardDetails {
+        padding: 12px; /* Reduced padding */
+    }
+
+    .cardNumber {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .cardExpiry,
+    .cardholderName {
+        font-size: 0.8rem; /* Smaller font size */
+        margin-left: 38px; /* Adjust margin to align with card number */
+    }
+
+    .actionButtons {
+        flex-direction: column; /* Ensure buttons stack vertically */
+        gap: 8px; /* Reduced gap */
+    }
+
+    .updateCardBtn,
+    .addPaymentBtn {
+        font-size: 0.9rem; /* Smaller font size */
+        padding: 10px; /* Adjusted padding */
+    }
+    
+    .securityInfo {
+        padding-top: 15px; /* Reduced padding */
+        margin-bottom: 15px;
+    }
+
+    .securityTitle {
+        font-size: 0.85rem;
+    }
+
+    .securityList li {
+        font-size: 0.8rem;
+        bottom: 0;
+    }
+
+    .securityCheckIcon {
+        font-size: 0.75rem;
+    }
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .paymentCard {
+      display: flex;
+      flex-direction: column;
+        min-width: unset;
+        width: 100%;
+        bottom: 0; /* Reset bottom position */
+        min-height: 670px;
+        position: relative;
+        right: 30px;
+        justify-content: center;
+        align-items: center;
+        bottom: 1730px;
+    }
+
+    .cardTitle {
+        font-size: 1.05rem;
+    }
+
+    .cardNumber {
+        font-size: 0.95rem;
+    }
+
+    .cardExpiry,
+    .cardholderName {
+        font-size: 0.85rem;
+    }
+    
+    .actionButtons {
+        flex-direction: column; /* Keep buttons in a row */
+        gap: 10px;
+    }
+
+    .updateCardBtn,
+    .addPaymentBtn {
+        font-size: 0.9rem;
+    }
+
+    .securityInfo {
+        padding-top: 18px;
+    }
+
+    .securityTitle {
+        font-size: 0.88rem;
+    }
+
+    .securityList li {
+        font-size: 0.82rem;
+    }
 }
